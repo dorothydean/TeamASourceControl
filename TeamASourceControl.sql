@@ -23,11 +23,12 @@ create table Teams
 	TeamID				tinyint				primary key identity (100,1)
 	,TeamName			varchar(30)			not null
 	,Coach				varchar(150)		null
+	,Location			varchar(150)		not null
 )
 
 SET IDENTITY_INSERT Teams ON
-insert into Teams(TeamID, TeamName, Coach)
-	values(100, 'Sounders', null)
+insert into Teams(TeamID, TeamName, Coach, Location)
+	values(100, 'Sounders', null, 'Seattle, WA')
 SET IDENTITY_INSERT Teams OFF
 go
 
