@@ -16,5 +16,9 @@ namespace TeamASourceControl
         {
             InitializeComponent();
         }
+
+        private void frm_Load(object sender, EventArgs e)
+        {
+        }
     }
 }

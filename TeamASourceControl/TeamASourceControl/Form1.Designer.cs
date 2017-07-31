@@ -36,6 +36,8 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.btnRegisterPlayer = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnUpdatePlayer = new System.Windows.Forms.Button();
+            this.btnDeleteRegistration = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -83,7 +85,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(333, 418);
+            this.btnExit.Location = new System.Drawing.Point(320, 554);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(208, 93);
             this.btnExit.TabIndex = 7;
@@ -108,11 +110,31 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Team";
             // 
+            // btnUpdatePlayer
+            // 
+            this.btnUpdatePlayer.Location = new System.Drawing.Point(320, 418);
+            this.btnUpdatePlayer.Name = "btnUpdatePlayer";
+            this.btnUpdatePlayer.Size = new System.Drawing.Size(221, 93);
+            this.btnUpdatePlayer.TabIndex = 8;
+            this.btnUpdatePlayer.Text = "Update Registration";
+            this.btnUpdatePlayer.UseVisualStyleBackColor = true;
+            // 
+            // btnDeleteRegistration
+            // 
+            this.btnDeleteRegistration.Location = new System.Drawing.Point(67, 554);
+            this.btnDeleteRegistration.Name = "btnDeleteRegistration";
+            this.btnDeleteRegistration.Size = new System.Drawing.Size(221, 93);
+            this.btnDeleteRegistration.TabIndex = 9;
+            this.btnDeleteRegistration.Text = "Delete Registration";
+            this.btnDeleteRegistration.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(652, 583);
+            this.ClientSize = new System.Drawing.Size(652, 722);
+            this.Controls.Add(this.btnDeleteRegistration);
+            this.Controls.Add(this.btnUpdatePlayer);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnRegisterPlayer);
             this.Controls.Add(this.btnAddTeam);
@@ -138,6 +160,8 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnRegisterPlayer;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnUpdatePlayer;
+        private System.Windows.Forms.Button btnDeleteRegistration;
     }
 }
 
