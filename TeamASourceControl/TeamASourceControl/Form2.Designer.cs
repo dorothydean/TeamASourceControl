@@ -38,6 +38,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.btnUpdatePlayer = new System.Windows.Forms.Button();
+            this.btnDeletePlayer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -53,7 +55,7 @@
             // txtFname
             // 
             this.txtFname.Location = new System.Drawing.Point(105, 45);
-            this.txtFname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtFname.Margin = new System.Windows.Forms.Padding(2);
             this.txtFname.Name = "txtFname";
             this.txtFname.Size = new System.Drawing.Size(155, 20);
             this.txtFname.TabIndex = 1;
@@ -61,7 +63,7 @@
             // txtLname
             // 
             this.txtLname.Location = new System.Drawing.Point(105, 84);
-            this.txtLname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtLname.Margin = new System.Windows.Forms.Padding(2);
             this.txtLname.Name = "txtLname";
             this.txtLname.Size = new System.Drawing.Size(155, 20);
             this.txtLname.TabIndex = 3;
@@ -79,7 +81,7 @@
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(105, 128);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(155, 20);
             this.txtEmail.TabIndex = 5;
@@ -97,7 +99,7 @@
             // txtPhone
             // 
             this.txtPhone.Location = new System.Drawing.Point(105, 171);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(2);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(155, 20);
             this.txtPhone.TabIndex = 7;
@@ -114,8 +116,8 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(38, 252);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdd.Location = new System.Drawing.Point(38, 224);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(106, 53);
             this.btnAdd.TabIndex = 8;
@@ -124,19 +126,41 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(184, 252);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExit.Location = new System.Drawing.Point(154, 291);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(106, 53);
             this.btnExit.TabIndex = 9;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
             // 
+            // btnUpdatePlayer
+            // 
+            this.btnUpdatePlayer.Location = new System.Drawing.Point(38, 291);
+            this.btnUpdatePlayer.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUpdatePlayer.Name = "btnUpdatePlayer";
+            this.btnUpdatePlayer.Size = new System.Drawing.Size(106, 53);
+            this.btnUpdatePlayer.TabIndex = 10;
+            this.btnUpdatePlayer.Text = "Update Player";
+            this.btnUpdatePlayer.UseVisualStyleBackColor = true;
+            // 
+            // btnDeletePlayer
+            // 
+            this.btnDeletePlayer.Location = new System.Drawing.Point(154, 224);
+            this.btnDeletePlayer.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDeletePlayer.Name = "btnDeletePlayer";
+            this.btnDeletePlayer.Size = new System.Drawing.Size(106, 53);
+            this.btnDeletePlayer.TabIndex = 11;
+            this.btnDeletePlayer.Text = "Delete Player";
+            this.btnDeletePlayer.UseVisualStyleBackColor = true;
+            // 
             // frm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(350, 396);
+            this.ClientSize = new System.Drawing.Size(317, 396);
+            this.Controls.Add(this.btnDeletePlayer);
+            this.Controls.Add(this.btnUpdatePlayer);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtPhone);
@@ -147,7 +171,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtFname);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frm";
             this.Text = "Add Player";
             this.ResumeLayout(false);
@@ -167,5 +191,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnUpdatePlayer;
+        private System.Windows.Forms.Button btnDeletePlayer;
     }
 }
