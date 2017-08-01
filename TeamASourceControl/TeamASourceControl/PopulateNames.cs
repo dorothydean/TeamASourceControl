@@ -12,7 +12,7 @@ namespace TeamASourceControl
         {
             get
             {
-                return PlayerFirstName + PlayerLastName;
+                return PlayerFirstName + " " + PlayerLastName;
             }
         }
     }

@@ -11,9 +11,9 @@ using System.Data.SqlClient;
 
 namespace TeamASourceControl
 {
-    public partial class frm : Form
+    public partial class frmAddPlayer : Form
     {
-        public frm()
+        public frmAddPlayer()
         {
             InitializeComponent();
         }
