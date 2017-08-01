@@ -123,6 +123,7 @@
             this.btnAdd.TabIndex = 8;
             this.btnAdd.Text = "Add Player";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnExit
             // 
@@ -143,6 +144,7 @@
             this.btnUpdatePlayer.TabIndex = 10;
             this.btnUpdatePlayer.Text = "Update Player";
             this.btnUpdatePlayer.UseVisualStyleBackColor = true;
+            this.btnUpdatePlayer.Click += new System.EventHandler(this.btnUpdatePlayer_Click);
             // 
             // btnDeletePlayer
             // 
@@ -153,6 +155,7 @@
             this.btnDeletePlayer.TabIndex = 11;
             this.btnDeletePlayer.Text = "Delete Player";
             this.btnDeletePlayer.UseVisualStyleBackColor = true;
+            this.btnDeletePlayer.Click += new System.EventHandler(this.btnDeletePlayer_Click);
             // 
             // frm
             // 
