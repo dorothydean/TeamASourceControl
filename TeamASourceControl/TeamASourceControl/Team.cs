@@ -18,5 +18,6 @@ namespace TeamASourceControl
         public string TeamName { get; set; }
         public string Coach { get; set; }
         public string Location { get; set; }
+        public string ContactNumber { get; set; }
     }
 }

@@ -16,5 +16,28 @@ namespace TeamASourceControl
         {
             InitializeComponent();
         }
+
+        private void btnAddTeam_Click(object sender, EventArgs e)
+        {
+            Team t = new Team();
+            t.TeamName = txtTeamName.Text;
+            t.Coach = txtCoachName.Text;
+            t.Location = txtLocation.Text;
+            t.ContactNumber = txtContact.Text;
+
+            SaveToDatabase(t);
+        }
+
+        private void SaveToDatabase(Team t)
+        {
+            TeamAEntities team = new TeamAEntities();
+            team.Teams.Add(t);
+            team.SaveChanges();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            TeamAEntities team = new TeamAEntities();
+        }
     }
 }
