@@ -37,18 +37,17 @@ namespace TeamASourceControl
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            using(TeamAEntities team = new TeamAEntities())
-            {
-                var t = new Team();
+            TeamAEntities db = new TeamAEntities();
 
-                GetTeam();
-            }
+            string team = txtTeamName.Text;
+            var selectedTeam = (from t in db.Teams
+                                where t.TeamName == team
+                                select t).Single();
+            selectedTeam.TeamName = team;
+            
         }
 
-        private void GetTeam()
-        {
-            throw new NotImplementedException();
-        }
+        
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
