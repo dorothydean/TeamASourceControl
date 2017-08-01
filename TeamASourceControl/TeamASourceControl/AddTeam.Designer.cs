@@ -62,6 +62,7 @@
             this.btnExit.TabIndex = 10;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // txtTeamName
             // 
@@ -153,6 +154,7 @@
             this.btnDelete.TabIndex = 20;
             this.btnDelete.Text = "Delete Team";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // AddTeam
             // 

@@ -37,7 +37,20 @@ namespace TeamASourceControl
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            TeamAEntities team = new TeamAEntities();
+            using(TeamAEntities team = new TeamAEntities())
+            {
+                var t = new Team();
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
