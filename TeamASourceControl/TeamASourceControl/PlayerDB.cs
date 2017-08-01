@@ -12,6 +12,7 @@ namespace TeamASourceControl
         public static List<Player> GetAllPlayers()
         {
             TeamAEntities db = new TeamAEntities();
+            throw new NotImplementedException();
         }
     }
 }

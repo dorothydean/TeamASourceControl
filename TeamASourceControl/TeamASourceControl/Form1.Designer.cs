@@ -73,6 +73,7 @@
             this.btnAddPlayer.TabIndex = 4;
             this.btnAddPlayer.Text = "Add Player";
             this.btnAddPlayer.UseVisualStyleBackColor = true;
+            this.btnAddPlayer.Click += new System.EventHandler(this.btnAddPlayer_Click);
             // 
             // btnAddTeam
             // 
@@ -82,6 +83,7 @@
             this.btnAddTeam.TabIndex = 5;
             this.btnAddTeam.Text = "Add Team";
             this.btnAddTeam.UseVisualStyleBackColor = true;
+            this.btnAddTeam.Click += new System.EventHandler(this.btnAddTeam_Click);
             // 
             // btnExit
             // 
@@ -91,6 +93,7 @@
             this.btnExit.TabIndex = 7;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnRegisterPlayer
             // 
@@ -100,6 +103,7 @@
             this.btnRegisterPlayer.TabIndex = 6;
             this.btnRegisterPlayer.Text = "Register Player";
             this.btnRegisterPlayer.UseVisualStyleBackColor = true;
+            this.btnRegisterPlayer.Click += new System.EventHandler(this.btnRegisterPlayer_Click);
             // 
             // label2
             // 

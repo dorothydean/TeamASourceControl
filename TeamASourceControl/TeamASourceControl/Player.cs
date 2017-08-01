@@ -20,5 +20,6 @@ namespace TeamASourceControl
         public string PlayerLastName { get; set; }
         public string PlayerPhone { get; set; }
         public string PlayerEmail { get; set; }
+        
     }
 }
