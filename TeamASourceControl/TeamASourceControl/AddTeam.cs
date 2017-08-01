@@ -40,7 +40,14 @@ namespace TeamASourceControl
             using(TeamAEntities team = new TeamAEntities())
             {
                 var t = new Team();
+
+                GetTeam();
             }
+        }
+
+        private void GetTeam()
+        {
+            throw new NotImplementedException();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
