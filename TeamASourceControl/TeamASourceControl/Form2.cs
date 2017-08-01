@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace TeamASourceControl
 {
@@ -17,17 +18,27 @@ namespace TeamASourceControl
             InitializeComponent();
         }
 
+        private void frm_Load(object sender, EventArgs e)
+        {
+           
+        }
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            //grab all info off form and put in player object
             Player p = new Player()
             {
-                PlayerFirstName = "",
-                PlayerLastName = "",
-                PlayerPhone = "",
-                PlayerEmail = ""
+                PlayerFirstName = txtFname.Text,
+                PlayerLastName = txtLname.Text,
+                PlayerPhone = txtPhone.Text,
+                PlayerEmail = txtEmail.Text
 
             };
+
+            //do validation
+            var db = new TeamAEntities();
+            db.Entry(p).State = System.Data.Entity.EntityState.Modified;
+            db.SaveChanges();
+
         }
 
         /// <summary>
@@ -37,13 +48,14 @@ namespace TeamASourceControl
         /// <param name="e"></param>
         private void btnUpdatePlayer_Click(object sender, EventArgs e)
         {
+            
             //grab all info off form and put in player object
             Player p = new Player()
             {
-                PlayerFirstName = "",
-                PlayerLastName = "",
-                PlayerPhone = "",
-                PlayerEmail = ""
+                PlayerFirstName = txtFname.Text,
+                PlayerLastName = txtLname.Text,
+                PlayerPhone = txtPhone.Text,
+                PlayerEmail = txtEmail.Text
 
             };
 
@@ -51,15 +63,24 @@ namespace TeamASourceControl
             var db = new TeamAEntities();
             db.Entry(p).State = System.Data.Entity.EntityState.Modified;
             db.SaveChanges();
+
         }
 
-        private void btnDeletePlayer_Click(object sender, EventArgs e)
+      
+        public static Player FindPlayer(string fName, string lName)
         {
-            //entity framework delet query
-            TeamAEntities db = new TeamAEntities();
+            var db = new TeamAEntities();
 
-            //find the id of the selected player
-            Int16 p = Get
+            Player p = (from plyr in db.Players
+                        where plyr.PlayerFirstName == fName
+                        && plyr.PlayerLastName == lName
+                        select plyr).Single();
+            return p;
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

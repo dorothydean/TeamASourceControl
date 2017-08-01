@@ -39,7 +39,6 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnUpdatePlayer = new System.Windows.Forms.Button();
-            this.btnDeletePlayer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -127,17 +126,18 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(154, 291);
+            this.btnExit.Location = new System.Drawing.Point(105, 281);
             this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(106, 53);
             this.btnExit.TabIndex = 9;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnUpdatePlayer
             // 
-            this.btnUpdatePlayer.Location = new System.Drawing.Point(38, 291);
+            this.btnUpdatePlayer.Location = new System.Drawing.Point(154, 224);
             this.btnUpdatePlayer.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdatePlayer.Name = "btnUpdatePlayer";
             this.btnUpdatePlayer.Size = new System.Drawing.Size(106, 53);
@@ -146,23 +146,11 @@
             this.btnUpdatePlayer.UseVisualStyleBackColor = true;
             this.btnUpdatePlayer.Click += new System.EventHandler(this.btnUpdatePlayer_Click);
             // 
-            // btnDeletePlayer
-            // 
-            this.btnDeletePlayer.Location = new System.Drawing.Point(154, 224);
-            this.btnDeletePlayer.Margin = new System.Windows.Forms.Padding(2);
-            this.btnDeletePlayer.Name = "btnDeletePlayer";
-            this.btnDeletePlayer.Size = new System.Drawing.Size(106, 53);
-            this.btnDeletePlayer.TabIndex = 11;
-            this.btnDeletePlayer.Text = "Delete Player";
-            this.btnDeletePlayer.UseVisualStyleBackColor = true;
-            this.btnDeletePlayer.Click += new System.EventHandler(this.btnDeletePlayer_Click);
-            // 
             // frm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(317, 396);
-            this.Controls.Add(this.btnDeletePlayer);
             this.Controls.Add(this.btnUpdatePlayer);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnAdd);
@@ -177,6 +165,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frm";
             this.Text = "Add Player";
+            this.Load += new System.EventHandler(this.frm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -195,6 +184,5 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnUpdatePlayer;
-        private System.Windows.Forms.Button btnDeletePlayer;
     }
 }

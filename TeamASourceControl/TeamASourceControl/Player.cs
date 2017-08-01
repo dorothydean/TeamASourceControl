@@ -14,6 +14,7 @@ namespace TeamASourceControl
     
     public partial class Player
     {
+
         public short PlayerID { get; set; }
         public Nullable<byte> TeamID { get; set; }
         public string PlayerFirstName { get; set; }
