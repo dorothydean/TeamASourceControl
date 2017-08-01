@@ -39,12 +39,11 @@
             this.txtLocation = new System.Windows.Forms.TextBox();
             this.lblLocation = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAddTeam
             // 
-            this.btnAddTeam.Location = new System.Drawing.Point(42, 236);
+            this.btnAddTeam.Location = new System.Drawing.Point(36, 225);
             this.btnAddTeam.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddTeam.Name = "btnAddTeam";
             this.btnAddTeam.Size = new System.Drawing.Size(106, 53);
@@ -55,10 +54,10 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(184, 236);
+            this.btnExit.Location = new System.Drawing.Point(96, 301);
             this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(106, 53);
+            this.btnExit.Size = new System.Drawing.Size(159, 53);
             this.btnExit.TabIndex = 10;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -138,30 +137,19 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(42, 294);
+            this.btnUpdate.Location = new System.Drawing.Point(165, 225);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(106, 47);
+            this.btnUpdate.Size = new System.Drawing.Size(106, 53);
             this.btnUpdate.TabIndex = 19;
             this.btnUpdate.Text = "Update Team";
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Location = new System.Drawing.Point(184, 294);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(106, 47);
-            this.btnDelete.TabIndex = 20;
-            this.btnDelete.Text = "Delete Team";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // AddTeam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(332, 365);
-            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.txtLocation);
             this.Controls.Add(this.lblLocation);
@@ -194,6 +182,5 @@
         private System.Windows.Forms.TextBox txtLocation;
         private System.Windows.Forms.Label lblLocation;
         private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Button btnDelete;
     }
 }

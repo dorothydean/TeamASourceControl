@@ -44,15 +44,9 @@ namespace TeamASourceControl
                                 where t.TeamName == team
                                 select t).Single();
             selectedTeam.TeamName = team;
+            db.SaveChanges();
             
-        }
-
-        
-
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-
-        }
+        }  
 
         private void btnExit_Click(object sender, EventArgs e)
         {
