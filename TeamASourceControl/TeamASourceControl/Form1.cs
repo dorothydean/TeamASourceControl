@@ -17,8 +17,6 @@ namespace TeamASourceControl
             PopulateTeamList();
         }
 
-       
-
         /// <summary>
         /// Functionality for buttons to add, update or delete player's registration to a specific team
         /// </summary>
@@ -74,7 +72,7 @@ namespace TeamASourceControl
             //show message that player has been registered
             string playerName = GetSelectedPlayer().PlayerFullName;
             string teamName = GetSelectedTeam().TeamName;
-            MessageBox.Show($"You have succesfully update {playerName}'s registration to {teamName}!");
+            MessageBox.Show($"You have succesfully updated {playerName}'s registration to {teamName}!");
 
         }
 
@@ -90,9 +88,13 @@ namespace TeamASourceControl
             int t = GetSelectedTeam().TeamID;
             Team foundTeam = db.Teams.Find(t);
 
-            //write TeamID to TeamID column in DB
-
-
+            //delete TeamID to TeamID column in DB
+            var result = db.Players.SingleOrDefault(player => player.PlayerID == p);
+            if (result != null)
+            {
+                result.TeamID = null;
+                db.SaveChanges();
+            }
 
             //show message that player has been registered
             string playerName = GetSelectedPlayer().PlayerFullName;
