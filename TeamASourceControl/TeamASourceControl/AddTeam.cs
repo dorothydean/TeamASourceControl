@@ -25,15 +25,13 @@ namespace TeamASourceControl
             t.Location = txtLocation.Text;
             t.ContactNumber = txtContact.Text;
 
-            SaveToDatabase(t);
-        }
-
-        private void SaveToDatabase(Team t)
-        {
             TeamAEntities team = new TeamAEntities();
             team.Teams.Add(t);
             team.SaveChanges();
+
+            MessageBox.Show("Your team has been successfully added");
         }
+
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
@@ -45,7 +43,9 @@ namespace TeamASourceControl
                                 select t).Single();
             selectedTeam.TeamName = team;
             db.SaveChanges();
-            
+
+            MessageBox.Show("Your team has been successfully updated");
+
         }  
 
         private void btnExit_Click(object sender, EventArgs e)

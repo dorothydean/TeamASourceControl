@@ -36,9 +36,11 @@ namespace TeamASourceControl
 
             //do validation
             var db = new TeamAEntities();
-            db.Entry(p).State = System.Data.Entity.EntityState.Modified;
+            //db.Entry(p).State = System.Data.Entity.EntityState.Modified; update query
+            db.Players.Add(p);
             db.SaveChanges();
 
+            MessageBox.Show("Your player has been successfully added");
         }
 
         /// <summary>
@@ -64,6 +66,7 @@ namespace TeamASourceControl
             db.Entry(p).State = System.Data.Entity.EntityState.Modified;
             db.SaveChanges();
 
+            MessageBox.Show("Your player has been successfully updated");
         }
 
       
