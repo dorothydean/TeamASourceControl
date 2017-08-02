@@ -39,7 +39,6 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnUpdatePlayer = new System.Windows.Forms.Button();
-            this.btnDeletePlayer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -134,6 +133,7 @@
             this.btnExit.TabIndex = 9;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnUpdatePlayer
             // 
@@ -144,24 +144,13 @@
             this.btnUpdatePlayer.TabIndex = 10;
             this.btnUpdatePlayer.Text = "Update Player";
             this.btnUpdatePlayer.UseVisualStyleBackColor = true;
+            this.btnUpdatePlayer.Click += new System.EventHandler(this.btnUpdatePlayer_Click);
             // 
-            // btnDeletePlayer
-            // 
-            this.btnDeletePlayer.Location = new System.Drawing.Point(308, 431);
-            this.btnDeletePlayer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnDeletePlayer.Name = "btnDeletePlayer";
-            this.btnDeletePlayer.Size = new System.Drawing.Size(212, 102);
-            this.btnDeletePlayer.TabIndex = 11;
-            this.btnDeletePlayer.Text = "Delete Player";
-            this.btnDeletePlayer.UseVisualStyleBackColor = true;
-            this.btnDeletePlayer.Click += new System.EventHandler(this.btnDeletePlayer_Click);
-            // 
-            // frmAddPlayer
+            // frm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(634, 762);
-            this.Controls.Add(this.btnDeletePlayer);
+            this.ClientSize = new System.Drawing.Size(317, 396);
             this.Controls.Add(this.btnUpdatePlayer);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnAdd);
@@ -176,6 +165,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmAddPlayer";
             this.Text = "Add Player";
+            this.Load += new System.EventHandler(this.frm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,6 +184,5 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnUpdatePlayer;
-        private System.Windows.Forms.Button btnDeletePlayer;
     }
 }
