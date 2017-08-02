@@ -14,11 +14,13 @@ namespace TeamASourceControl
     
     public partial class Player
     {
+
         public short PlayerID { get; set; }
-        public byte TeamID { get; set; }
+        public Nullable<byte> TeamID { get; set; }
         public string PlayerFirstName { get; set; }
         public string PlayerLastName { get; set; }
         public string PlayerPhone { get; set; }
         public string PlayerEmail { get; set; }
+        
     }
 }

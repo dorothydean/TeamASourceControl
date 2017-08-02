@@ -75,6 +75,7 @@
     <Compile Include="Player.cs">
       <DependentUpon>TeamPlayerRegistration.tt</DependentUpon>
     </Compile>
+    <Compile Include="PopulateNames.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Team.cs">
