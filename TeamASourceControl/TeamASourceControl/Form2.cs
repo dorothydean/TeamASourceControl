@@ -18,43 +18,69 @@ namespace TeamASourceControl
             InitializeComponent();
         }
 
+        private void frm_Load(object sender, EventArgs e)
+        {
+           
+        }
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
             Player p = new Player()
             {
-                PlayerFirstName = "Joe",
-                PlayerLastName = "DiMaggio",
-                PlayerPhone = "2355551234",
-                PlayerEmail = "dimaggio@halloffame.com"
+                PlayerFirstName = txtFname.Text,
+                PlayerLastName = txtLname.Text,
+                PlayerPhone = txtPhone.Text,
+                PlayerEmail = txtEmail.Text
+
             };
 
+            //do validation
             var db = new TeamAEntities();
-            db.Players.Add(p);
+            db.Entry(p).State = System.Data.Entity.EntityState.Modified;
             db.SaveChanges();
+
         }
 
-        private void btnDeletePlayer_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Updates player from the players lis
+        /// </summary>
+        /// <param name="sender">player list</param>
+        /// <param name="e"></param>
+        private void btnUpdatePlayer_Click(object sender, EventArgs e)
         {
-            //entity framework delete query
-            TeamAEntities db = new TeamAEntities();
-
-            //find the id of the selected player
-            int p = GetPlayer().PlayerID;
-
-            //get that player from the db context
-            Player found = db.Players.Find(p);
-
-            //remove the player that was found
-            db.Players.Remove(found);
-            db.SaveChanges();
-
-            //refresh player
             
+            //grab all info off form and put in player object
+            Player p = new Player()
+            {
+                PlayerFirstName = txtFname.Text,
+                PlayerLastName = txtLname.Text,
+                PlayerPhone = txtPhone.Text,
+                PlayerEmail = txtEmail.Text
+
+            };
+
+            //do validation
+            var db = new TeamAEntities();
+            db.Entry(p).State = System.Data.Entity.EntityState.Modified;
+            db.SaveChanges();
+
         }
 
-        private object GetPlayer()
+      
+        public static Player FindPlayer(string fName, string lName)
         {
-            Player p = txtFname.Text && txtLname.Text as Player;
+            var db = new TeamAEntities();
+
+            Player p = (from plyr in db.Players
+                        where plyr.PlayerFirstName == fName
+                        && plyr.PlayerLastName == lName
+                        select plyr).Single();
+            return p;
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
