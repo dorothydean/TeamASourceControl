@@ -36,8 +36,6 @@ namespace TeamASourceControl
 
             //do validation
             var db = new TeamAEntities();
-            db.Entry(p).State = System.Data.Entity.EntityState.Modified;
-            db.SaveChanges();
 
         }
 
@@ -64,6 +62,7 @@ namespace TeamASourceControl
             db.Entry(p).State = System.Data.Entity.EntityState.Modified;
             db.SaveChanges();
 
+            MessageBox.Show("Your player has been successfully updated");
         }
 
       
@@ -77,6 +76,7 @@ namespace TeamASourceControl
                         select plyr).Single();
             return p;
         }
+
 
         private void btnExit_Click(object sender, EventArgs e)
         {
