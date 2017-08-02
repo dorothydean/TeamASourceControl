@@ -1,6 +1,6 @@
 ﻿namespace TeamASourceControl
 {
-    partial class frm
+    partial class frmAddPlayer
     {
         /// <summary>
         /// Required designer variable.
@@ -45,120 +45,122 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(41, 48);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(82, 92);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 13);
+            this.label1.Size = new System.Drawing.Size(116, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "First Name";
             // 
             // txtFname
             // 
-            this.txtFname.Location = new System.Drawing.Point(105, 45);
-            this.txtFname.Margin = new System.Windows.Forms.Padding(2);
+            this.txtFname.Location = new System.Drawing.Point(210, 87);
+            this.txtFname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtFname.Name = "txtFname";
-            this.txtFname.Size = new System.Drawing.Size(155, 20);
+            this.txtFname.Size = new System.Drawing.Size(306, 31);
             this.txtFname.TabIndex = 1;
             // 
             // txtLname
             // 
-            this.txtLname.Location = new System.Drawing.Point(105, 84);
-            this.txtLname.Margin = new System.Windows.Forms.Padding(2);
+            this.txtLname.Location = new System.Drawing.Point(210, 162);
+            this.txtLname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtLname.Name = "txtLname";
-            this.txtLname.Size = new System.Drawing.Size(155, 20);
+            this.txtLname.Size = new System.Drawing.Size(306, 31);
             this.txtLname.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(41, 87);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(82, 167);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 13);
+            this.label2.Size = new System.Drawing.Size(115, 25);
             this.label2.TabIndex = 2;
             this.label2.Text = "Last Name";
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(105, 128);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEmail.Location = new System.Drawing.Point(210, 246);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(155, 20);
+            this.txtEmail.Size = new System.Drawing.Size(306, 31);
             this.txtEmail.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(41, 132);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(82, 254);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(32, 13);
+            this.label3.Size = new System.Drawing.Size(65, 25);
             this.label3.TabIndex = 4;
             this.label3.Text = "Email";
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(105, 171);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPhone.Location = new System.Drawing.Point(210, 329);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(155, 20);
+            this.txtPhone.Size = new System.Drawing.Size(306, 31);
             this.txtPhone.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(41, 174);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(82, 335);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 13);
+            this.label4.Size = new System.Drawing.Size(74, 25);
             this.label4.TabIndex = 6;
             this.label4.Text = "Phone";
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(38, 224);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAdd.Location = new System.Drawing.Point(76, 431);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(106, 53);
+            this.btnAdd.Size = new System.Drawing.Size(212, 102);
             this.btnAdd.TabIndex = 8;
             this.btnAdd.Text = "Add Player";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(154, 291);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExit.Location = new System.Drawing.Point(308, 560);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(106, 53);
+            this.btnExit.Size = new System.Drawing.Size(212, 102);
             this.btnExit.TabIndex = 9;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
             // 
             // btnUpdatePlayer
             // 
-            this.btnUpdatePlayer.Location = new System.Drawing.Point(38, 291);
-            this.btnUpdatePlayer.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUpdatePlayer.Location = new System.Drawing.Point(76, 560);
+            this.btnUpdatePlayer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnUpdatePlayer.Name = "btnUpdatePlayer";
-            this.btnUpdatePlayer.Size = new System.Drawing.Size(106, 53);
+            this.btnUpdatePlayer.Size = new System.Drawing.Size(212, 102);
             this.btnUpdatePlayer.TabIndex = 10;
             this.btnUpdatePlayer.Text = "Update Player";
             this.btnUpdatePlayer.UseVisualStyleBackColor = true;
             // 
             // btnDeletePlayer
             // 
-            this.btnDeletePlayer.Location = new System.Drawing.Point(154, 224);
-            this.btnDeletePlayer.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDeletePlayer.Location = new System.Drawing.Point(308, 431);
+            this.btnDeletePlayer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDeletePlayer.Name = "btnDeletePlayer";
-            this.btnDeletePlayer.Size = new System.Drawing.Size(106, 53);
+            this.btnDeletePlayer.Size = new System.Drawing.Size(212, 102);
             this.btnDeletePlayer.TabIndex = 11;
             this.btnDeletePlayer.Text = "Delete Player";
             this.btnDeletePlayer.UseVisualStyleBackColor = true;
+            this.btnDeletePlayer.Click += new System.EventHandler(this.btnDeletePlayer_Click);
             // 
-            // frm
+            // frmAddPlayer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(317, 396);
+            this.ClientSize = new System.Drawing.Size(634, 762);
             this.Controls.Add(this.btnDeletePlayer);
             this.Controls.Add(this.btnUpdatePlayer);
             this.Controls.Add(this.btnExit);
@@ -171,8 +173,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtFname);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "frm";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "frmAddPlayer";
             this.Text = "Add Player";
             this.ResumeLayout(false);
             this.PerformLayout();
